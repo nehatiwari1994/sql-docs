@@ -26,6 +26,8 @@ In order for monitoring data to be collected on a [!INCLUDE [ssazurearc](../../i
    - [!INCLUDE [ssnoversion-md](../../includes/ssnoversion-md.md)] running on [!INCLUDE [winserver2012-md](../../includes/winserver2012-md.md)] and older versions aren't supported
 * [!INCLUDE [ssazurearc](../../includes/ssazurearc.md)] is a Standard or Enterprise Edition
 * The server has connectivity to telemetry.{region}.arcdataservices.com (for more information, see [Network Requirements ](/azure/azure-arc/servers/network-requirements?tabs=azure-cloud))
+* if the server is onboarded to arc through private link ensure to configure the log analytics workspace where SQL VMs are reporting should be enbaled for the private link scope
+  refer link https://learn.microsoft.com/EN-us/azure/azure-monitor/logs/private-link-design. Ensure the DNS resolution is in place 
 * The license type on the [!INCLUDE [ssazurearc](../../includes/ssazurearc.md)] is set to "License with Software Assurance" or "Pay-as-you-go"
 
 ### Current Limitations
